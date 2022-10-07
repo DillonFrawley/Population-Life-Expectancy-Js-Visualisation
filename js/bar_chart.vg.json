@@ -120,6 +120,10 @@
           "type": "quantitative",
           "aggregate": "mean"
         },
+        "color": {
+          "type": "nominal",
+          "scale": {"domain": ["Mean Value: 72.63"], "range": ["red"]}
+        },
         "tooltip": [
           {
             "title": "Life Expectancy",
@@ -135,28 +139,14 @@
             "type": "rule"
           },
           "encoding": {
-            "color": { "value": "firebrick" },
+            "color": { "datum":"Mean Value: 72.63" },
             "size": { "value": 3 }
-          }
-        },
-        {
-          "mark": {
-            "type": "text",
-            "align": "left",
-            "baseline": "line-bottom",
-            "dx": 3
-          },
-          "encoding": {
-            "text": {
-              "field": "All",
-              "type": "quantitative",
-              "aggregate": "mean"
-            }
           }
         }
       ]
     }
   ],
+  "resolve": {"scale": {"color": "independent"}},
   "config": {
     "scale": {
       "bandPaddingInner": 0.2
