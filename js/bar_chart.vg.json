@@ -10,6 +10,17 @@
     "url": "./data/List_of_countries_by_life_expectancy.csv"
   },
   "params": [
+      {
+        "name": "Rank",
+        "value": 10,
+        "bind": {
+        "input": "range",
+        "min": 1,
+        "max": 197,
+        "step": 1,
+        "name": "Rank All"
+        }
+    },
     {
       "name": "Continent_selection",
       "bind": {
@@ -50,11 +61,13 @@
       "joinaggregate": [{ "op": "max", "field": "rank", "as": "total" }]
     },
     {
-      "filter": "datum.rank <= 5  || (datum.rank > datum.total - 5)"
+      "filter": "Continent_selection == null || datum.Continent == Continent_selection"
     },
     {
-      "filter": "Continent_selection == null || datum.Continent == Continent_selection"
-    }
+      "filter": "datum.rank <= Rank"
+    },
+    {"calculate": "datum.rank", "as":"CountryRank"}
+
   ],
   "layer": [
     {
@@ -65,7 +78,7 @@
           "type": "quantitative",
           "axis": { "grid": true },
           "scale": {
-            "domain": [0, 90]
+            "domain": [50, 90]
           },
           "sort": { "encoding": "y", "order": "ascending" }
         },
@@ -93,7 +106,8 @@
       "layer": [
         {
           "mark": {
-            "type": "bar"
+            "type": "bar",
+            "clip":true
           }
         },
         {
@@ -104,7 +118,7 @@
             "dx": 3
           },
           "encoding": {
-            "text": { "field": "All", "type": "quantitative" }
+            "text": { "field": "CountryRank", "type": "quantitative" }
           }
         }
       ]
@@ -122,7 +136,7 @@
         },
         "color": {
           "type": "nominal",
-          "scale": {"domain": ["Mean Value: 72.63"], "range": ["red"]}
+          "scale": {"domain": ["Mean Value: 72.6"], "range": ["red"]}
         },
         "tooltip": [
           {
@@ -139,17 +153,12 @@
             "type": "rule"
           },
           "encoding": {
-            "color": { "datum":"Mean Value: 72.63" },
+            "color": { "datum":"Mean Value: 72.6" },
             "size": { "value": 3 }
           }
         }
       ]
     }
   ],
-  "resolve": {"scale": {"color": "independent"}},
-  "config": {
-    "scale": {
-      "bandPaddingInner": 0.2
-    }
-  }
+  "resolve": {"scale": {"color": "independent"}}
 }
