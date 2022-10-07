@@ -1,0 +1,125 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Average Life Expectancy Per Country Male Vs Female",
+    "fontSize": 20
+  },
+  "width": 675,
+  "height": 400,
+  "layer": [
+    {
+      "data": {
+        "url": "./data/List_of_countries_by_life_expectancy.csv"
+      },
+      "transform": [
+        {
+          "filter": "datum.Continent.length >0"
+        }
+      ],
+      "mark": {
+        "type": "point",
+        "filled": true
+      },
+      "params": [
+        {
+          "name": "continent",
+          "select": { "type": "point", "fields": ["Continent"] },
+          "bind": "legend"
+        },
+        {
+          "name": "grid",
+          "select": "interval",
+          "bind": "scales"
+        }
+      ],
+      "encoding": {
+        "x": {
+          "title": "Male",
+          "field": "M",
+          "type": "quantitative",
+          "scale": {
+            "domain": [50, 90]
+          }
+        },
+        "y": {
+          "title": "Female",
+          "field": "F",
+          "type": "quantitative",
+          "scale": { "domain": [50, 90] }
+        },
+        "color": {
+          "field": "Continent",
+          "type": "nominal",
+          "legend": { "labelFontSize": 12, "titleFontSize": 15 }
+        },
+        "opacity": {
+          "condition": { "param": "continent", "value": 1 },
+          "value": 0.1
+        },
+        "tooltip": [
+          {
+            "field": "Countries and regions",
+            "type": "nominal",
+            "title": "Country"
+          },
+          { "field": "Continent", "type": "nominal", "title": "Continent" },
+          {
+            "field": "M",
+            "type": "quantitative",
+            "format": ".1f",
+            "title": "Male"
+          },
+          {
+            "field": "F",
+            "type": "quantitative",
+            "format": ".1f",
+            "title": "Female"
+          }
+        ]
+      }
+    },
+    {
+      "data": {
+        "values": [
+          { "a": 0, "b": 0 },
+          { "a": 100, "b": 100 }
+        ]
+      },
+      "layer": [
+        {
+          "mark": { "type": "line", "strokeDash": [8, 8] },
+          "encoding": {
+            "text": { "title": "Male = Female" },
+            "color": {
+              "value": "black"
+            },
+            "x": {
+              "field": "a",
+              "type": "quantitative"
+            },
+            "y": {
+              "field": "b",
+              "type": "quantitative"
+            }
+          }
+        },
+        {
+          "data": {
+            "values": [{ "c": "Male = Female Reference Line" }]
+          },
+          "mark": {
+            "type": "text",
+            "align": "left",
+            "dx": 50,
+            "font": "helvetica",
+            "fontSize": 12,
+            "fontWeight": "bolder"
+          },
+          "encoding": {
+            "text": { "field": "c", "type": "nominal" }
+          }
+        }
+      ]
+    }
+  ]
+}
