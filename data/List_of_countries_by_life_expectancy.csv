@@ -2,14 +2,12 @@ Countries and regions,All,M,F,Gender life gap,Continent
 Afghanistan,64.8,62.7,64.9,3,Asia
 Albania,78.6,77,80.2,7.8,Europe
 Algeria,76.9,75.7,78.1,2.4,Africa
-Samoa,72.5,69.1,76.6,7.5, Oceania
 Andorra,83.42,81.2,85.79,4.59,Europe
 Angola,61.2,58.4,64,5.6,Africa
 Antigua and Barbuda,77,75.9,78.1,2.3,North America
 Arab States,72.1,70.4,73.9,3.6,Asia
 Argentina,76.7,73.2,80,6.8,South America
 Armenia,75.1,71.3,78.5,7.2,Asia
-Aruba,74.6,71.8,77.3,5.5, South America
 Australia,83.4,81.5,85.4,3.9,Oceania
 Austria,81.5,79.2,83.9,4.8,Europe
 Azerbaijan,73,70.5,75.5,5,Asia
@@ -30,8 +28,8 @@ Brunei,75.9,74.7,77.1,2.4,Asia
 Bulgaria,75.1,71.5,78.7,7.1,Europe
 Burkina Faso,61.6,60.7,62.3,1.5,Africa
 Burma,67.1,65.1,70.1,6.1,Asia
-Burundi,61.6,59.8,63.4,3.6,Africa
-Cabo Verde,73,69.5,76.2,6.7,Africa
+Burundi,61.6,59.8,63.4,3.6,africa
+Cabo Verde,73,69.5,76.2,6.7,af
 Cambodia,69.8,67.5,71.9,4.3,Asia
 Cameroon,59.3,58,60.6,2.5,Africa
 Canada,82.4,80.4,84.4,4,North America
@@ -53,7 +51,6 @@ Denmark,80.9,78.9,82.9,5,Europe
 Djibouti,67.1,65.1,69.4,4.2,Africa
 Dominica,72.8,69.7,76.3,6.6,North America
 Dominican Republic,74.1,71,77.4,6.4,North America
-East Asia and the Pacific,75.4,73.1,78,4.9,Asia
 Ecuador,77,74.3,79.8,5.5,South America
 Egypt,72,69.7,74.3,4.6,Africa
 El Salvador,73.3,68.5,77.8,9.4,North America
@@ -62,7 +59,7 @@ Eritrea,66.3,64.2,68.6,4.4,Africa
 Estonia,78.8,74.4,82.7,8.4,Europe
 Eswatini,60.2,56,64.8,8.7,Africa
 Ethiopia,66.6,65,68.5,3.8,Africa
-Falkland Islands (Islas Malvinas),78.6,76.5,81,4.5,South America
+Europe and Central Asia,74.4,71.1,77.7,6.7,
 Federated States of Micronesia,67.9,66.2,69.6,3.4,Oceania
 Fiji,67.4,65.7,69.3,3.6,Oceania
 Finland,81.9,79.1,84.7,5.7,Europe
@@ -100,7 +97,6 @@ Kiribati,68.4,64.2,72.3,8,Oceania
 Kuwait,75.5,74.8,76.6,1.8,Asia
 Kyrgyzstan,71.5,69.4,75.6,8.2,Asia
 Laos,67.9,66.1,69.7,3.6,Asia
-Latin America and the Caribbean,75.6,72.4,78.7,6.3,
 Latvia,75.3,70.2,80,9.8,Europe
 Lebanon,78.9,77.1,80.9,3.7,Asia
 Lesotho,54.3,51.2,57.6,6.4,Africa
@@ -164,10 +160,12 @@ Slovenia,81.3,78.6,84,5.5,Europe
 Solomon Islands,73,71.3,74.9,3.5,Oceania
 Somalia,55.3,53.2,57.4,4.2,Africa
 South Africa,64.1,60.7,67.7,6.9,Africa
+South Asia,69.9,68.7,71.3,2.6,
 South Korea,83,79.9,86,6.1,Asia
 South Sudan,57.9,56.4,59.4,3,Africa
 Spain,83.5,80.8,86.2,5.4,Europe
 Sri Lanka,77,73.6,80.3,6.7,Asia
+Sub-Saharan Africa,61.5,59.8,63.3,3.1,
 Sudan,65.5,65.5,67.2,3.6,Africa
 Suriname,71.8,68.5,75.1,6.6,South America
 Sweden,82.8,81,84.6,3.6,Europe
@@ -193,11 +191,7 @@ Uzbekistan,71.7,70.6,73.8,4.3,Asia
 Vanuatu,70.5,69,72.2,3.2,Oceania
 Venezuela,72.1,68.3,76,7.7,South America
 Vietnam,75.4,71.3,79.5,8.2,Asia
-West Bank and Gaza,76.3,74.3,78.6,4.3,
-Western Sahara,70.8,69.1,72.9,3.8,
-World,72.8,70.6,75,4.5,
 Yemen,66.1,63.4,67.5,3.4,Asia
 Zambia,63.9,60.8,66.9,5.9,Africa
 Zimbabwe,61.5,59.8,62.9,3.1,Africa
 North Korea,73.3,70.8,75.7,4.9,Asia
-New Caledonia,79,75.4,83.1,7.7,Oceania
