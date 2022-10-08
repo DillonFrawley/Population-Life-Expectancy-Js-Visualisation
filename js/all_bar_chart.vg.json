@@ -121,7 +121,7 @@
             },
             "y": {
               "title": "Country",
-              "field": "Countries and regions",
+              "field": "Country",
               "type": "ordinal",
               "sort": { "op": "sum", "field": "All", "order": "descending" }
             },
@@ -150,7 +150,7 @@
 
             "tooltip": [
               {
-                "field": "Countries and regions",
+                "field": "Country",
                 "type": "nominal",
                 "title": "Country"
               },
@@ -256,7 +256,7 @@
             },
             "y": {
               "title": "Country",
-              "field": "Countries and regions",
+              "field": "Country",
               "type": "ordinal",
               "sort": { "op": "sum", "field": "All", "order": "ascending" }
             },
@@ -284,7 +284,7 @@
             },
             "tooltip": [
               {
-                "field": "Countries and regions",
+                "field": "Country",
                 "type": "nominal",
                 "title": "Country"
               },

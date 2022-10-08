@@ -31,7 +31,7 @@
             "data": {
               "url": "./data/List_of_countries_by_life_expectancy.csv"
             },
-            "key": "Countries and regions",
+            "key": "Country",
             "fields": ["All"]
           }
         },
