@@ -1,11 +1,11 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
-    "text": "Average Life Expectancy For The Top & Bottom 5 Countries",
+    "text": "Average Life Expectancy For The Top & Bottom N Countries Ranked",
     "frame":"group",
     "fontSize":16,
     "subtitle":"Figure 2 (top) & Figure 3 (btm)",
-    "subtitlePadding":5,
+    "subtitlePadding":20,
     "subtitleColor":"grey",
     "anchor": "middle"
   },
@@ -93,7 +93,7 @@
         "subtitle":"Figure 2"
       },
       "width": 390,
-      "height": 200,
+      "height": 250,
       "transform": [
         {
           "window": [
@@ -122,7 +122,7 @@
               "title": "",
               "field": "All",
               "type": "quantitative",
-              "axis": { "grid": true},
+              "axis": { "grid": true, "labels":true},
               "scale": {
                 "domain": [50, 90]
               },
@@ -233,7 +233,7 @@
     },
     {
       "width": 390,
-      "height": 200,
+      "height": 250,
       "transform": [
         {
           "window": [
@@ -338,7 +338,7 @@
             },
             "color": {
               "type": "nominal",
-              "scale": { "domain": ["Mean Value(All Countries): 72.5"], "range": ["red"] }
+              "scale": { "domain": ["Mean Value(All Countries): 72.5"], "range": ["red"]}
              
             },
             "tooltip": [

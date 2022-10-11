@@ -6,7 +6,7 @@
     "align": "center",
     "fontSize": 16,
     "subtitle": "Figure 5",
-    "subtitlePadding": 5,
+    "subtitlePadding": 20,
     "subtitleColor": "grey",
     "anchor": "middle"
   },
