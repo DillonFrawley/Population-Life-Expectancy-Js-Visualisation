@@ -2,7 +2,8 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
     "text": "Average Life Expectancy For The Top & Bottom 5 Countries",
-    "fontSize": 20
+    "frame":"group",
+    "fontSize":16
   },
   "data": {
     "url": "./data/List_of_countries_by_life_expectancy.csv"
@@ -83,8 +84,8 @@
   ],
   "vconcat": [
     {
-      "width": 700,
-      "height": 300,
+      "width": 390,
+      "height": 200,
       "transform": [
         {
           "window": [
@@ -219,8 +220,8 @@
       "resolve": { "scale": { "color": "independent" } }
     },
     {
-      "width": 700,
-      "height": 300,
+      "width": 390,
+      "height": 200,
       "transform": [
         {
           "window": [

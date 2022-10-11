@@ -2,14 +2,16 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
     "text": "Average Life Expectancy By Country in 2019",
-    "fontSize": 20
+    "frame":"group",
+    "align": "center",
+    "fontSize":16
   },
   "width": 700,
   "height": 500,
   "params": [
     {
       "name": "zoom_level",
-      "value": 130,
+      "value": 140,
       "bind": {
         "input": "range",
         "min": 140,
@@ -109,7 +111,8 @@
               "legend": {
                 "titlePadding": 5,
                 "direction": "horizontal",
-                "titleFontSize": 10
+                "titleFontSize": 10,
+                "orient": "bottom-right"
               }
             },
             "tooltip": [
@@ -144,7 +147,7 @@
                 "as": "text_annotation"
               }],
               "data": {
-                "values": [{ "a": 100, "b": -50 }]
+                "values": [{ "a": 90, "b": -45 }]
               },
               "mark": {
                 "type": "text",
@@ -153,14 +156,14 @@
                 "dy": -8,
                 "baseline": "middle",
                 "fontStyle": "italic",
-                "fontSize":8
+                "fontSize":9
                 
               },
               "encoding": {
                 "longitude": { "field": "a", "type": "quantitative" },
                 "latitude": { "field": "b", "type": "quantitative" },
                 "text": { "field": "text_annotation" },
-                "color":{"value":"grey"}
+                "color":{"value":"black"}
               }
             },
             {
@@ -175,7 +178,7 @@
                 }
               ],
               "data": {
-                "values": [{ "a": -29, "b": -15 }]
+                "values": [{ "a": -33, "b": -15 }]
               },
               "mark": {
                 "type": "text",
@@ -184,13 +187,13 @@
                 "dy": -8,
                 "baseline": "middle",
                 "fontStyle": "italic",
-                "fontSize":8
+                "fontSize":9
               },
               "encoding": {
                 "longitude": { "field": "a", "type": "quantitative" },
                 "latitude": { "field": "b", "type": "quantitative" },
                 "text": { "field": "text_annotation" },
-                "color":{"value":"grey"}
+                "color":{"value":"black"}
               }
             },
             {
@@ -205,7 +208,7 @@
                 }
               ],
               "data": {
-                "values": [{ "a": -54, "b": 40 }]
+                "values": [{ "a": -66, "b": 35 }]
               },
               "mark": {
                 "type": "text",
@@ -214,13 +217,13 @@
                 "dy": -8,
                 "baseline": "middle",
                 "fontStyle": "italic",
-                "fontSize":8
+                "fontSize":9
               },
               "encoding": {
                 "longitude": { "field": "a", "type": "quantitative" },
                 "latitude": { "field": "b", "type": "quantitative" },
                 "text": { "field": "text_annotation" },
-                "color":{"value":"grey"}
+                "color":{"value":"black"}
               }
             },{
               "transform": [
@@ -234,7 +237,7 @@
                 }
               ],
               "data": {
-                "values": [{ "a": -172, "b": 40 }]
+                "values": [{ "a": -180, "b": 40 }]
               },
               "mark": {
                 "type": "text",
@@ -243,13 +246,13 @@
                 "dy": -8,
                 "baseline": "middle",
                 "fontStyle": "italic",
-                "fontSize":8
+                "fontSize":9
               },
               "encoding": {
                 "longitude": { "field": "a", "type": "quantitative" },
                 "latitude": { "field": "b", "type": "quantitative" },
                 "text": { "field": "text_annotation" },
-                "color":{"value":"grey"}
+                "color":{"value":"black"}
               }
             }
           ]
