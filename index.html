@@ -17,6 +17,7 @@
             </h1>
         </center>
         <div id="choropleth_map"></div>
+        <div id="all_bar_chart"></div> 
         <div id="line_chart"></div> 
         <script type="text/javascript">
             var spec2 = "./js/choropleth_map.vg.json";
@@ -25,6 +26,10 @@
             }).catch(console.error);
             var vg_1 = "./js/line_chart.vg.json";
             vegaEmbed("#line_chart", vg_1).then(function(result) {
+            // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+            }).catch(console.error);
+            var vg_2 = "./js/all_bar_chart.vg.json";
+            vegaEmbed("#all_bar_chart", vg_2).then(function(result) {
             // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
             }).catch(console.error);
             

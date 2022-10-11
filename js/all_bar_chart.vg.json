@@ -149,13 +149,13 @@
             },
 
             "tooltip": [
+              { "field": "Continent", "type": "nominal", "title": "Continent" },
               {
                 "field": "Country",
                 "type": "nominal",
                 "title": "Country"
               },
-              { "field": "Continent", "type": "nominal", "title": "Continent" },
-              { "field": "All", "type": "quantitative", "title": "Male" }
+              { "field": "All", "type": "quantitative", "title": "Avg Life(Years)" }
             ]
           },
           "layer": [
@@ -191,14 +191,15 @@
             },
             "color": {
               "type": "nominal",
-              "scale": { "domain": ["Mean Value: 72.6"], "range": ["red"] }
+              "scale": { "domain": ["Mean Value(All Countries): 72.5"], "range": ["red"] }
             },
             "tooltip": [
               {
                 "title": "Life Expectancy",
                 "field": "All",
                 "type": "quantitative",
-                "aggregate": "mean"
+                "aggregate": "mean",
+                "format": ".1f"
               }
             ]
           },
@@ -208,7 +209,7 @@
                 "type": "rule"
               },
               "encoding": {
-                "color": { "datum": "Mean Value: 72.6" },
+                "color": { "datum": "Mean Value(All Countries): 72.5" },
                 "size": { "value": 3 }
               }
             }
@@ -283,13 +284,13 @@
               }
             },
             "tooltip": [
+              { "field": "Continent", "type": "nominal", "title": "Continent" },
               {
                 "field": "Country",
                 "type": "nominal",
                 "title": "Country"
               },
-              { "field": "Continent", "type": "nominal", "title": "Continent" },
-              { "field": "All", "type": "quantitative", "title": "Male" }
+              { "field": "All", "type": "quantitative", "title": "Avg Life(Years)" }
             ]
           },
           "layer": [
@@ -325,14 +326,15 @@
             },
             "color": {
               "type": "nominal",
-              "scale": { "domain": ["Mean Value: 72.6"], "range": ["red"] }
+              "scale": { "domain": ["Mean Value(All Countries): 72.5"], "range": ["red"] }
             },
             "tooltip": [
               {
                 "title": "Life Expectancy",
                 "field": "All",
                 "type": "quantitative",
-                "aggregate": "mean"
+                "aggregate": "mean",
+                "format": ".1f"
               }
             ]
           },
@@ -342,7 +344,7 @@
                 "type": "rule"
               },
               "encoding": {
-                "color": { "datum": "Mean Value: 72.6" },
+                "color": { "datum": "Mean Value(All Countries): 72.5" },
                 "size": { "value": 3 }
               }
             }

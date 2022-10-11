@@ -5,7 +5,6 @@ Algeria,76.9,75.7,78.1,2.4,Africa
 Andorra,83.42,81.2,85.79,4.59,Europe
 Angola,61.2,58.4,64,5.6,Africa
 Antigua and Barbuda,77,75.9,78.1,2.3,North America
-Arab States,72.1,70.4,73.9,3.6,Asia
 Argentina,76.7,73.2,80,6.8,South America
 Armenia,75.1,71.3,78.5,7.2,Asia
 Australia,83.4,81.5,85.4,3.9,Oceania
@@ -27,9 +26,8 @@ Brazil,75.9,73.6,80.8,7.1,South America
 Brunei,75.9,74.7,77.1,2.4,Asia
 Bulgaria,75.1,71.5,78.7,7.1,Europe
 Burkina Faso,61.6,60.7,62.3,1.5,Africa
-Burma,67.1,65.1,70.1,6.1,Asia
-Burundi,61.6,59.8,63.4,3.6,africa
-Cabo Verde,73,69.5,76.2,6.7,af
+Burundi,61.6,59.8,63.4,3.6,Africa
+Cabo Verde,73,69.5,76.2,6.7,Africa
 Cambodia,69.8,67.5,71.9,4.3,Asia
 Cameroon,59.3,58,60.6,2.5,Africa
 Canada,82.4,80.4,84.4,4,North America
@@ -39,14 +37,13 @@ Chile,80.2,77.8,82.4,4.8,South America
 China,76.9,74.8,79.2,4.4,Asia
 Colombia,77.3,74.5,80,5.6,South America
 Comoros,64.3,62.6,66.1,3.5,Africa
-Democratic Republic of the Congo,60.7,59.1,62.2,3.1,Africa
-Republic of the Congo,64.6,63.1,66,2.9,Africa
 Costa Rica,80.3,77.7,82.9,5.2,North America
 Cote D'ivoire,57.8,56.6,59.1,2.4,Africa
 Croatia,79.1,76.6,81.6,5,Europe
 Cuba,78.8,76.8,80.8,3.9,North America
 Cyprus,81,78.9,83,4.2,Europe
 Czechia,79.4,76.8,81.9,5.2,Europe
+Democratic Republic of the Congo,60.7,59.1,62.2,3.1,Africa
 Denmark,80.9,78.9,82.9,5,Europe
 Djibouti,67.1,65.1,69.4,4.2,Africa
 Dominica,72.8,69.7,76.3,6.6,North America
@@ -59,18 +56,15 @@ Eritrea,66.3,64.2,68.6,4.4,Africa
 Estonia,78.8,74.4,82.7,8.4,Europe
 Eswatini,60.2,56,64.8,8.7,Africa
 Ethiopia,66.6,65,68.5,3.8,Africa
-Europe and Central Asia,74.4,71.1,77.7,6.7,
 Federated States of Micronesia,67.9,66.2,69.6,3.4,Oceania
 Fiji,67.4,65.7,69.3,3.6,Oceania
 Finland,81.9,79.1,84.7,5.7,Europe
 France,82.7,79.7,85.5,5.8,Europe
 Gabon,66.5,65.4,68.7,4.7,Africa
-The Gambia,62.1,60.7,63.5,2.8,Africa
 Georgia,73.8,69.3,78.1,8.8,Asia
 Germany,81.3,78.9,83.7,4.8,Europe
 Ghana,64.1,63,65.2,2.2,Africa
 Greece,82.2,79.8,84.7,4.9,Europe
-Greenland,72.4,69.9,75.7,5.8,North America
 Grenada,72.4,70.1,75,4.8,North America
 Guatemala,74.3,72.2,77.2,4.1,North America
 Guinea,61.6,60.9,62.1,1.2,Africa
@@ -78,7 +72,6 @@ Guinea-Bissau,58.3,56.3,60.2,3.9,Africa
 Guyana,69.9,66.9,73.1,6.2,South America
 Haiti,64,61.8,66.2,4.3,North America
 Honduras,75.3,73,77.6,4.6,North America
-Hong Kong,84.9,82,87.7,5.7,Asia
 Hungary,76.9,73.2,80.3,7,Europe
 Iceland,83,81.5,84.5,3,Europe
 India,69.7,68.5,71,2.5,Asia
@@ -91,6 +84,7 @@ Italy,84,81.9,86.1,4.2,Europe
 Jamaica,74.5,72.9,76.1,3.2,North America
 Japan,84.6,81.5,87.7,6.2,Asia
 Jordan,74.5,72.8,76.3,3.5,Asia
+Kosovo,76.8,74.2,79.6,5.4,Europe
 Kazakhstan,73.6,69.2,77.7,5.3,Asia
 Kenya,67,66.9,69,4.7,Africa
 Kiribati,68.4,64.2,72.3,8,Oceania
@@ -117,17 +111,21 @@ Mauritania,65,65,66.5,3.2,Africa
 Mauritius,75,71.7,78.5,6.9,Africa
 Mexico,75.1,72.2,77.9,5.7,North America
 Moldova,71.9,67.6,76.2,8.6,Europe
+Monaco,85.9,84.3,87.7,3.4,Europe
 Mongolia,70.3,70,74.1,8.4,Asia
 Montenegro,76.9,74.4,79.3,4.9,Europe
 Morocco,76.7,75.4,77.9,2.5,Africa
 Mozambique,60.9,57.8,63.7,5.9,Africa
+Myanmar,67.1,65.1,70.1,6.1,Asia
 Namibia,63.7,60.7,66.5,5.8,Africa
+Nauru,63.6,60.3,67.3,7,Oceania
 Nepal,70.8,69.3,72.2,2.9,Asia
 Netherlands,82.3,80.6,84,3.4,Europe
 New Zealand,82.3,80.6,84,3.5,Oceania
 Nicaragua,74.5,70.9,78,7.1,North America
 Niger,62.4,61.3,63.6,2.3,Africa
 Nigeria,54.7,53.8,55.6,1.7,Africa
+North Korea,73.3,70.8,75.7,4.9,Asia
 Norway,82.4,80.4,84.4,4,Europe
 Oman,77.9,76.1,80.3,4.2,Asia
 Pakistan,67.4,66.4,68.4,1.9,Asia
@@ -141,6 +139,7 @@ Philippines,71.2,70.3,75.5,8.3,Asia
 Poland,78.7,74.8,82.6,7.8,Europe
 Portugal,82.1,79,84.9,5.9,Europe
 Qatar,80.2,79.1,82,4.8,Asia
+Republic of the Congo,64.6,63.1,66,2.9,Africa
 Romania,76.1,72.6,79.5,6.9,Europe
 Russia,72.9,67.6,78.2,10.6,Asia
 Rwanda,69,66.8,71.1,4.3,Africa
@@ -148,6 +147,7 @@ Saint Kitts and Nevis,71.7,68.3,75.3,7,North America
 Saint Lucia,76.2,74.9,77.6,2.7,North America
 Saint Vincent and the Grenadines,72.5,70.3,75.1,4.8,North America
 Samoa,73.3,71.3,75.5,4.1,Oceania
+San Marino,80.9,78.4,83.5,5.1,Europe
 Sao Tome and Principe,70.4,68,72.8,4.8,Africa
 Saudi Arabia,75.1,73.9,76.8,2.8,Asia
 Senegal,67.9,65.8,69.9,4.1,Africa
@@ -159,13 +159,12 @@ Slovakia,77.5,74,81,7,Europe
 Slovenia,81.3,78.6,84,5.5,Europe
 Solomon Islands,73,71.3,74.9,3.5,Oceania
 Somalia,55.3,53.2,57.4,4.2,Africa
+Somaliland,55.3,53.2,57.4,4.2,Africa
 South Africa,64.1,60.7,67.7,6.9,Africa
-South Asia,69.9,68.7,71.3,2.6,
 South Korea,83,79.9,86,6.1,Asia
 South Sudan,57.9,56.4,59.4,3,Africa
 Spain,83.5,80.8,86.2,5.4,Europe
 Sri Lanka,77,73.6,80.3,6.7,Asia
-Sub-Saharan Africa,61.5,59.8,63.3,3.1,
 Sudan,65.5,65.5,67.2,3.6,Africa
 Suriname,71.8,68.5,75.1,6.6,South America
 Sweden,82.8,81,84.6,3.6,Europe
@@ -174,6 +173,7 @@ Syria,72.7,67.9,78.1,10.2,Asia
 Tajikistan,71.1,68.9,73.4,4.5,Asia
 Tanzania,65.5,63.6,67.2,3.6,Africa
 Thailand,77,73.2,80.8,7.5,Asia
+The Gambia,62.1,60.7,63.5,2.8,Africa
 Timor-Leste,69.5,67.5,71.6,4.1,Asia
 Togo,61,60.2,61.9,1.7,Africa
 Tonga,70.9,69,72.9,3.9,Oceania
@@ -181,17 +181,18 @@ Trinidad and Tobago,73.6,70.9,76.2,8.5,North America
 Tunisia,76.7,74.7,78.7,4,Africa
 Turkey,77.7,74.7,80.6,5.4,Europe
 Turkmenistan,68.4,67.7,71.7,7,Asia
+Tuvalu,64.5,60.8,69.1,8.3,Oceania
 Uganda,63.4,61,65.6,4.5,Africa
 Ukraine,72.1,71.1,76.8,9.7,Europe
 United Arab Emirates,78,77.3,79.3,2.1,Asia
 United Kingdom,81.3,79.6,83,3.5,Europe
-Uruguay,77.9,74.1,81.5,7.4,South America
 United States,78.5,75.3,81.6,6.4,North America
+Uruguay,77.9,74.1,81.5,7.4,South America
 Uzbekistan,71.7,70.6,73.8,4.3,Asia
 Vanuatu,70.5,69,72.2,3.2,Oceania
+Vatican,82.3,80,84.7,4.7,Europe
 Venezuela,72.1,68.3,76,7.7,South America
 Vietnam,75.4,71.3,79.5,8.2,Asia
 Yemen,66.1,63.4,67.5,3.4,Asia
 Zambia,63.9,60.8,66.9,5.9,Africa
 Zimbabwe,61.5,59.8,62.9,3.1,Africa
-North Korea,73.3,70.8,75.7,4.9,Asia
