@@ -3,7 +3,11 @@
   "title": {
     "text": "Average Life Expectancy For The Top & Bottom 5 Countries",
     "frame":"group",
-    "fontSize":16
+    "fontSize":16,
+    "subtitle":"Figure 2 (top) & Figure 3 (btm)",
+    "subtitlePadding":5,
+    "subtitleColor":"grey",
+    "anchor": "middle"
   },
   "data": {
     "url": "./data/List_of_countries_by_life_expectancy.csv"
@@ -11,24 +15,24 @@
   "params": [
     {
       "name": "Rank",
-      "value": 10,
+      "value": 11,
       "bind": {
         "input": "range",
-        "min": 1,
+        "min": 0,
         "max": 197,
         "step": 1,
-        "name": "Rank All"
+        "name": "Display Countries Ranked Higher Than(Top Visualisation)"
       }
     },
     {
       "name": "Rank2",
-      "value": 10,
+      "value": 186,
       "bind": {
         "input": "range",
-        "min": 1,
+        "min": 0,
         "max": 197,
         "step": 1,
-        "name": "Rank All2"
+        "name": "Display Countries Ranked Lower Than(Btm Visualisation) "
       }
     },
     {
@@ -53,7 +57,7 @@
           "Asia",
           "Oceania"
         ],
-        "name": "Continent Selection: "
+        "name": "Continent Selection(Top Visualisation): "
       }
     },
     {
@@ -78,12 +82,16 @@
           "Asia",
           "Oceania"
         ],
-        "name": "Continent Selection2: "
+        "name": "Continent Selection(Btm Visualisation): "
       }
     }
   ],
   "vconcat": [
     {
+      "title":{
+        "text":"",
+        "subtitle":"Figure 2"
+      },
       "width": 390,
       "height": 200,
       "transform": [
@@ -103,7 +111,7 @@
           "filter": "Continent_selection == null || datum.Continent == Continent_selection"
         },
         {
-          "filter": "datum.rank <= Rank"
+          "filter": "datum.rank < Rank"
         },
         { "calculate": "datum.rank", "as": "CountryRank" }
       ],
@@ -111,18 +119,19 @@
         {
           "encoding": {
             "x": {
-              "title": "Life Expectancy",
+              "title": "",
               "field": "All",
               "type": "quantitative",
-              "axis": { "grid": true },
+              "axis": { "grid": true},
               "scale": {
                 "domain": [50, 90]
               },
               "sort": { "encoding": "y", "order": "ascending" }
             },
             "y": {
-              "title": "Country",
+              "title": "",
               "field": "Country",
+  
               "type": "ordinal",
               "sort": { "op": "sum", "field": "All", "order": "descending" }
             },
@@ -146,7 +155,8 @@
                   "#377eb8",
                   "#a65628"
                 ]
-              }
+              },
+              "legend":null
             },
 
             "tooltip": [
@@ -185,14 +195,15 @@
           },
           "encoding": {
             "x": {
-              "title": "Life Expectancy",
+              "title": "",
               "field": "All",
               "type": "quantitative",
               "aggregate": "mean"
             },
             "color": {
               "type": "nominal",
-              "scale": { "domain": ["Mean Value(All Countries): 72.5"], "range": ["red"] }
+              "scale": { "domain": ["Mean Value(All Countries): 72.5"], "range": ["red"] },
+              "legend":null
             },
             "tooltip": [
               {
@@ -212,6 +223,7 @@
               "encoding": {
                 "color": { "datum": "Mean Value(All Countries): 72.5" },
                 "size": { "value": 3 }
+                
               }
             }
           ]
@@ -239,7 +251,7 @@
           "filter": "Continent_selection2 == null || datum.Continent == Continent_selection2"
         },
         {
-          "filter": "datum.rank >= datum.total - Rank2"
+          "filter": "datum.rank > Rank2"
         },
         { "calculate": "datum.rank", "as": "CountryRank2" }
       ],
@@ -253,14 +265,13 @@
               "axis": { "grid": true },
               "scale": {
                 "domain": [50, 90]
-              },
-              "sort": { "encoding": "y", "order": "ascending" }
+              }
             },
             "y": {
               "title": "Country",
               "field": "Country",
               "type": "ordinal",
-              "sort": { "op": "sum", "field": "All", "order": "ascending" }
+              "sort": { "op": "sum", "field": "All", "order": "descending" }
             },
             "color": {
               "field": "Continent",
@@ -328,6 +339,7 @@
             "color": {
               "type": "nominal",
               "scale": { "domain": ["Mean Value(All Countries): 72.5"], "range": ["red"] }
+             
             },
             "tooltip": [
               {

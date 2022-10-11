@@ -1,10 +1,14 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
-    "text": "Average Life Expectancy By Country in 2019",
+    "text": "Average Life Expectancy By Country in 2019 Choropleth Map",
     "frame":"group",
     "align": "center",
-    "fontSize":16
+    "fontSize":16,
+    "subtitle":"Figure 1",
+    "subtitlePadding":5,
+    "subtitleColor":"grey",
+    "anchor": "middle"
   },
   "width": 700,
   "height": 500,
@@ -32,10 +36,10 @@
           [15, 45],
           [12, 5],
           [100, 30],
-          [170, -25]
+          [140, -20]
         ],
         "labels": [
-          "Map Centre",
+          "World",
           "North America",
           "South America",
           "Europe",
@@ -101,12 +105,12 @@
       ],
       "layer": [
         {
-          "mark": { "type": "geoshape", "stroke": "black" },
+          "mark": { "type": "geoshape", "stroke": "lightgrey" },
           "encoding": {
             "color": {
               "field": "Average Life Expectancy",
               "title": "Average Life Expectancy",
-              "scale": { "type": "quantize", "nice": 7, "scheme": "goldred" },
+              "scale": { "type": "quantize", "nice": 7, "scheme": "goldgreen" },
 
               "legend": {
                 "titlePadding": 5,
