@@ -4,7 +4,7 @@
     "text": "Average Life Expectancy By Country in 2019 Choropleth Map",
     "frame":"group",
     "align": "center",
-    "fontSize":16,
+    "fontSize":18,
     "subtitle":"Figure 1",
     "subtitlePadding":20,
     "subtitleColor":"grey",

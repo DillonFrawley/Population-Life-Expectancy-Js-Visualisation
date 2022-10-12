@@ -1,11 +1,11 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "width": 563,
-  "height": 300,
+  "height": 400,
   "title": {
     "text": "Average Life Expectancy Male Vs Female Per Country in 2019 ",
     "frame":"group",
-    "fontSize":16,
+    "fontSize":18,
     "subtitle":"Figure 4",
     "subtitlePadding":20,
     "subtitleColor":"grey",

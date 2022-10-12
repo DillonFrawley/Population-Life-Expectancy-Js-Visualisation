@@ -3,7 +3,8 @@
   "title": {
     "text": "Average Life Expectancy For The Top & Bottom N Countries Ranked",
     "frame":"group",
-    "fontSize":16,
+    "align":"center",
+    "fontSize":18,
     "subtitle":"Figure 2 (top) & Figure 3 (btm)",
     "subtitlePadding":20,
     "subtitleColor":"grey",
@@ -22,17 +23,6 @@
         "max": 197,
         "step": 1,
         "name": "Display Countries Ranked Higher Than(Top Visualisation)"
-      }
-    },
-    {
-      "name": "Rank2",
-      "value": 186,
-      "bind": {
-        "input": "range",
-        "min": 0,
-        "max": 197,
-        "step": 1,
-        "name": "Display Countries Ranked Lower Than(Btm Visualisation) "
       }
     },
     {
@@ -58,6 +48,17 @@
           "Oceania"
         ],
         "name": "Continent Selection(Top Visualisation): "
+      }
+    },
+    {
+      "name": "Rank2",
+      "value": 186,
+      "bind": {
+        "input": "range",
+        "min": 0,
+        "max": 197,
+        "step": 1,
+        "name": "Display Countries Ranked Lower Than(Btm Visualisation) "
       }
     },
     {
@@ -92,7 +93,7 @@
         "text":"",
         "subtitle":"Figure 2"
       },
-      "width": 390,
+      "width": 450,
       "height": 250,
       "transform": [
         {
@@ -232,7 +233,7 @@
       "resolve": { "scale": { "color": "independent" } }
     },
     {
-      "width": 390,
+      "width": 450,
       "height": 250,
       "transform": [
         {
