@@ -1,15 +1,15 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "width": 563,
+  "width": 570,
   "height": 400,
   "title": {
     "text": "Average Life Expectancy Male Vs Female Per Country in 2019 ",
-    "frame":"group",
-    "fontSize":18,
-    "subtitle":"Figure 4",
+    "fontSize": 22,
+    "dx":0,
+    "subtitle":"Figure 5",
     "subtitlePadding":20,
     "subtitleColor":"grey",
-    "anchor": "middle"
+    "subtitleFontSize":14
   },
 
   "data": {
@@ -61,7 +61,7 @@
   ],
   "encoding": {
     "x": {
-      "title":"Male",
+      "title":"Male Life Expectancy (Years)",
       "field": "M",
       "type": "quantitative",
       "scale": {
@@ -69,7 +69,7 @@
       }
     },
     "y": {
-      "title": "Female",
+      "title": "Female Life Expectancy (Years)",
       "field": "F",
       "type": "quantitative",
       "scale": { "domain": [50, 90] }
@@ -90,7 +90,7 @@
           "#e41a1c",
           "#984ea3",
           "#ff7f00",
-          "green",
+          "#e75480",
           "#377eb8",
           "#a65628"
         ]
@@ -119,13 +119,13 @@
             "field": "M",
             "type": "quantitative",
             "format": ".1f",
-            "title": "Male Avg(Years)"
+            "title": "Male"
           },
           {
             "field": "F",
             "type": "quantitative",
             "format": ".1f",
-            "title": "Female Avg(Years)"
+            "title": "Female"
           }
         ]
       }
@@ -176,6 +176,26 @@
           },
           "layer": [
             {
+              "transform": [
+                {"calculate": "'<---- Male = Female'", "as":"text_annotation"}
+              ],
+              "mark": { 
+                "type": "text",
+                "align": "left",
+                "dx": -500,
+                "dy": 360,
+                "clip": true,
+                "baseline": "middle",
+                "fontStyle": "italic",
+                "fontSize":12
+                
+              },
+              "encoding": {
+                "text":{"field":"text_annotation"},
+                "color": { "value": "black" }
+              }
+            },
+            {
               "mark": { "type": "line", "strokeDash": [8, 8], "clip": true },
               "encoding": {
                 "color": { "datum": "Male = Female" }
@@ -188,6 +208,7 @@
                 }
               ]
             }
+            
           ]
         }
       ]

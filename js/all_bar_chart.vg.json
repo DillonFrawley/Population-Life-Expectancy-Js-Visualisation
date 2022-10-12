@@ -1,13 +1,14 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
-    "text": "Average Life Expectancy For The Top & Bottom N Countries Ranked",
-    "frame":"group",
-    "align":"center",
-    "fontSize":18,
-    "subtitle":"Figure 2 (top) & Figure 3 (btm)",
-    "subtitlePadding":20,
-    "subtitleColor":"grey",
+    "text": "Average Life Expectancy For The Top & Bottom N Ranked Countries",
+    "frame": "group",
+    "align": "center",
+    "fontSize": 22,
+    "subtitle": "Figure 2 (top) & Figure 3 (btm)",
+    "subtitlePadding": 20,
+    "subtitleFontSize":14,
+    "subtitleColor": "grey",
     "anchor": "middle"
   },
   "data": {
@@ -89,11 +90,11 @@
   ],
   "vconcat": [
     {
-      "title":{
-        "text":"",
-        "subtitle":"Figure 2"
+      "title": {
+        "text": "",
+        "subtitle": "Figure 2"
       },
-      "width": 450,
+      "width": 475,
       "height": 250,
       "transform": [
         {
@@ -123,7 +124,7 @@
               "title": "",
               "field": "All",
               "type": "quantitative",
-              "axis": { "grid": true, "labels":true},
+              "axis": { "grid": true, "labels": true },
               "scale": {
                 "domain": [50, 90]
               },
@@ -132,7 +133,7 @@
             "y": {
               "title": "",
               "field": "Country",
-  
+
               "type": "ordinal",
               "sort": { "op": "sum", "field": "All", "order": "descending" }
             },
@@ -152,12 +153,11 @@
                   "#e41a1c",
                   "#984ea3",
                   "#ff7f00",
-                  "green",
+                  "#e75480",
                   "#377eb8",
                   "#a65628"
                 ]
-              },
-              "legend":null
+              }
             },
 
             "tooltip": [
@@ -167,7 +167,12 @@
                 "type": "nominal",
                 "title": "Country"
               },
-              { "field": "All", "type": "quantitative", "title": "Avg Life(Years)" }
+              {
+                "field": "All",
+                "type": "quantitative",
+                "title": "Life Expectancy"
+                
+              }
             ]
           },
           "layer": [
@@ -203,8 +208,7 @@
             },
             "color": {
               "type": "nominal",
-              "scale": { "domain": ["Mean Value(All Countries): 72.5"], "range": ["red"] },
-              "legend":null
+              "scale": { "domain": ["World Mean"], "range": ["black"] }
             },
             "tooltip": [
               {
@@ -222,9 +226,8 @@
                 "type": "rule"
               },
               "encoding": {
-                "color": { "datum": "Mean Value(All Countries): 72.5" },
+                "color": { "datum": "World Mean" },
                 "size": { "value": 3 }
-                
               }
             }
           ]
@@ -233,7 +236,7 @@
       "resolve": { "scale": { "color": "independent" } }
     },
     {
-      "width": 450,
+      "width": 475,
       "height": 250,
       "transform": [
         {
@@ -260,7 +263,7 @@
         {
           "encoding": {
             "x": {
-              "title": "Life Expectancy",
+              "title": "Life Expectancy (Years)",
               "field": "All",
               "type": "quantitative",
               "axis": { "grid": true },
@@ -290,11 +293,12 @@
                   "#e41a1c",
                   "#984ea3",
                   "#ff7f00",
-                  "green",
+                  "#e75480",
                   "#377eb8",
                   "#a65628"
                 ]
-              }
+              },
+              "legend": null
             },
             "tooltip": [
               { "field": "Continent", "type": "nominal", "title": "Continent" },
@@ -303,7 +307,11 @@
                 "type": "nominal",
                 "title": "Country"
               },
-              { "field": "All", "type": "quantitative", "title": "Avg Life(Years)" }
+              {
+                "field": "All",
+                "type": "quantitative",
+                "title": "Life Expectancy"
+              }
             ]
           },
           "layer": [
@@ -332,16 +340,17 @@
           },
           "encoding": {
             "x": {
-              "title": "Life Expectancy",
+              "title": "",
               "field": "All",
               "type": "quantitative",
               "aggregate": "mean"
             },
             "color": {
               "type": "nominal",
-              "scale": { "domain": ["Mean Value(All Countries): 72.5"], "range": ["red"]}
-             
+              "scale": { "domain": ["World Mean"], "range": ["black"] },
+              "legend": null
             },
+
             "tooltip": [
               {
                 "title": "Life Expectancy",
@@ -358,8 +367,22 @@
                 "type": "rule"
               },
               "encoding": {
-                "color": { "datum": "Mean Value(All Countries): 72.5" },
+                "color": { "datum": "World Mean" },
                 "size": { "value": 3 }
+              }
+            },
+            {
+              "mark": {
+                "type": "text",
+                "align": "left",
+                "dx": 4,
+                "dy": 0,
+                "baseline": "middle",
+                "fontStyle": "italic",
+                "fontSize": 10
+              },
+              "encoding": {
+                "text": { "value": "<--- World Mean" }
               }
             }
           ]
@@ -367,5 +390,6 @@
       ],
       "resolve": { "scale": { "color": "independent" } }
     }
-  ]
+  ],
+  "autosize": { "type": "pad", "resize": true }
 }
