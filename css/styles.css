@@ -8,7 +8,7 @@ body {
 h2{
 margin-top: 3px;
 font-size: 22;
-margin-left: 45px;
+margin-left: 67px;
 text-align: justify;
 }
 
@@ -21,7 +21,7 @@ h1{
 .vis-container {
     width: 800;
     margin-right: 20px;
-    margin-left: 10px;
+    margin-left: 50px;
 }
 
 .vis-container-box{
@@ -51,13 +51,14 @@ h1{
     padding-left: 50px;
     max-width: 40ch;
     font-size: 18;
-    margin-left: -5px;
+    margin-left: 18px;
+    margin-right:30px;
     text-align: justify;
 }
 
 #paragraph {
-    padding-left: 200px;
-    max-width: 40ch;
+    padding-left: 203px;
+    max-width: 45ch;
     margin-top: 70px;
     text-align: justify;
 
