@@ -32,26 +32,22 @@
   <body>
     <div class="page">
       <h1>Average Life Expectancy Per Continent & Country in 2019</h1>
-      <br />
-      <br />
-      <br />
-      <br />
-      <hr />
-      <br />
-      <br />
-      <br />
+    </div>
+
+    <br />
+    <br />
+
+    <div class="page">
       <center id="map">
-        <div id="avg_life_choropleth_map" class="vis-container"></div>
+        <div id="avg_life_choropleth_map"></div>
       </center>
 
       <br />
       <br />
-      <br />
-      <br />
 
       <div class="pure-g">
-        <div class="pure-u-1-3">
-          <div class="description description-center">
+        <div class="pure-u-1-2">
+          <div class="description description-left">
             <p>
               <span style="color: #e75480; font-weight: bold">Africa</span> has
               the largest range of average life expectancy for a continent with
@@ -71,10 +67,23 @@
               it the country with the lowest average life expectancy in the
               world.
             </p>
+            <p>
+              The Continent with the highest average life expectancy is
+              <span style="color: #ff7f00; font-weight: bold">Europe</span>
+              being 79.9 years.
+            </p>
           </div>
         </div>
-        <div class="pure-u-1-3">
-          <div class="description description-center">
+        <div class="pure-u-1-2">
+          <div id="paragraph" class="description description-left">
+            <p>
+              Interestingly
+              <span style="color: #ff7f00; font-weight: bold">Europe</span> also
+              contains the country having the highest average life expectancy in
+              the world being
+              <span style="color: #ff7f00; font-weight: bold">Europe</span> with
+              an average life expectancy of 85.4 years
+            </p>
             <p>
               <span style="color: #a65628; font-weight: bold">Oceania</span> is
               an interesting Continent to analyse when looking at average life
@@ -92,86 +101,66 @@
             </p>
           </div>
         </div>
-        <div class="pure-u-1-3">
-          <div class="description description-center">
-            <p>
-              The Continent with the highest average life expectancy is
-              <span style="color: #ff7f00; font-weight: bold">Europe</span>
-              being 79.9 years. Interestingly
-              <span style="color: #ff7f00; font-weight: bold">Europe</span> also
-              contains the country having the highest average life expectancy in
-              the world being
-              <span style="color: #ff7f00; font-weight: bold">Europe</span> with
-              an average life expectancy of 85.4 years
-            </p>
+
+        <br />
+        <br />
+        <div class="pure-g">
+          <div class="pure-u-1-2">
+            <div id="all_bar_chart" class="vis-container"></div>
+          </div>
+          <div class="pure-u-1-2">
+            <div id="paragraph" class="description description-left">
+              <p>
+                Out of the top ten countries in the world by average life
+                expectancy we can see in figure 2 that 7 out of 10 are from
+                <span style="color: #ff7f00; font-weight: bold">Europe</span>.
+                As previously mentioned in figure 1 the country with the highest
+                average life expectancy in the world is
+                <span style="color: #ff7f00; font-weight: bold">Monaco</span>
+                with 85.9 years.
+              </p>
+              <p>
+                <span style="color: #a65628; font-weight: bold">Australia</span>
+                is the only country in the top ten from
+                <span style="color: #a65628; font-weight: bold">Oceania</span>
+                with an average life expectancy of 83.4 years and is the clear
+                outlier in figure 2.
+              </p>
+              <p>
+                As previously mentioned in figure 1
+                <span style="color: #e75480; font-weight: bold">Africa</span>
+                contains the country with the lowest average life expectancy in
+                the world being the
+                <span style="color: #e75480; font-weight: bold"
+                  >Central African Republic</span
+                >
+                (53.3 years). Intrestingly, for the 10 worst ranked countries by
+                average life expectancy all 10 countries are from
+                <span style="color: #e75480; font-weight: bold">Africa</span>,
+                which when looking at the average life expectancy for each
+                continent one would not be surprised that
+                <span style="color: #e75480; font-weight: bold">Africa</span>
+                has the lowest average life expectancy being only 63.9 years
+                which is 8.6 years below the average life expectancy for the
+                entire world.
+              </p>
+            </div>
           </div>
         </div>
       </div>
-
-      <br />
-      <br />
-      <div class="pure-g">
-        <div class="pure-u-1-2">
-          <div id="all_bar_chart" class="vis-container"></div>
-        </div>
-        <div class="pure-u-1-2">
-          <div id="paragraph" class="description description-center">
-            <p>
-              Out of the top ten countries in the world by average life
-              expectancy we can see in figure 2 that 7 out of 10 are from
-              <span style="color: #ff7f00; font-weight: bold">Europe</span>. As
-              previously mentioned in figure 1 the country with the highest
-              average life expectancy in the world is
-              <span style="color: #ff7f00; font-weight: bold">Monaco</span> with
-              85.9 years.
-            </p>
-            <p>
-              <span style="color: #a65628; font-weight: bold">Australia</span>
-              is the only country in the top ten from
-              <span style="color: #a65628; font-weight: bold">Oceania</span>
-              with an average life expectancy of 83.4 years and is the clear
-              outlier in figure 2.
-            </p>
-            <p>
-              As previously mentioned in figure 1
-              <span style="color: #e75480; font-weight: bold">Africa</span>
-              contains the country with the lowest average life expectancy in
-              the world being the
-              <span style="color: #e75480; font-weight: bold"
-                >Central African Republic</span
-              >
-              (53.3 years). Intrestingly, for the 10 worst ranked countries by
-              average life expectancy all 10 countries are from
-              <span style="color: #e75480; font-weight: bold">Africa</span>,
-              which when looking at the average life expectancy for each
-              continent one would not be surprised that
-              <span style="color: #e75480; font-weight: bold">Africa</span> has
-              the lowest average life expectancy being only 63.9 years which is
-              8.6 years below the average life expectancy for the entire world.
-            </p>
-          </div>
-        </div>
-      </div>
-      <br />
-      <br />
-      <br />
-      <br />
-      <hr />
-      <br />
-      <br />
-      <br />
-
+    </div>
+    <br />
+    <br />
+    <div class="page">
       <center id="map">
-        <div id="gender_diff_choropleth_map" class="vis-container"></div>
+        <div id="gender_diff_choropleth_map"></div>
       </center>
       <br />
       <br />
-      <br />
-      <br />
 
       <div class="pure-g">
-        <div class="pure-u-1-3">
-          <div class="description description-center">
+        <div class="pure-u-1-2">
+          <div class="description description-left">
             <p>
               Interestingly
               <span style="color: #ff7f00; font-weight: bold">Europe</span>
@@ -184,10 +173,15 @@
               the country with the largest gender difference in the world being
               11.1 years.
             </p>
+            <p>
+              <span style="color: #377eb8; font-weight: bold">Russia</span> has
+              quite a large gender difference and contains the second largest
+              gender difference in the world with 10.6 years.
+            </p>
           </div>
         </div>
-        <div class="pure-u-1-3">
-          <div class="description description-center">
+        <div class="pure-u-1-2">
+          <div id="paragraph" class="description description-left">
             <p>
               As we can see in figure 4
               <span style="color: #a65628; font-weight: bold">Oceania</span> is
@@ -198,15 +192,6 @@
               3.5 years.
             </p>
             <p>
-              <span style="color: #377eb8; font-weight: bold">Russia</span> has
-              quite a large gender difference and contains the second largest
-              gender difference in the world with 10.6 years.
-            </p>
-          </div>
-        </div>
-        <div class="pure-u-1-3">
-          <div class="description description-center">
-            <p>
               The mean gender difference for the entire world is 4.9 years,
               meaning females live on average 4.9 years longer than males
             </p>
@@ -214,14 +199,12 @@
         </div>
       </div>
 
-      <br />
-      <br />
       <div class="pure-g">
         <div class="pure-u-1-2">
           <div id="line_chart" class="vis-container"></div>
         </div>
         <div class="pure-u-1-2">
-          <div id="paragraph" class="description description-center">
+          <div id="paragraph" class="description description-left">
             <p>
               As we can see in figure 5 there is no country in the world that
               has a higher male average life expectancy than female average life
@@ -261,29 +244,27 @@
           </div>
         </div>
       </div>
+    </div>
 
       <br />
       <br />
-      <br />
-      <br />
-      <hr />
-      <br />
-      <br />
-      <br />
-      <div class="description description-center">
-        <h2>References:</h2>
-        <br />
-        <p>Author: Dillon Frawley</p>
-        <p>
-          Source:
-          https://en.wikipedia.org/wiki/List_of_countries_by_life_expectancy
-          (table 4)
-        </p>
-        <p>
-          Dataset:
-          https://drive.google.com/file/d/1cFxsHNjolHO15AtvC74YpE9eEADOQdc/view?usp=sharing
-        </p>
-        <p>GitHub:https://github.com/dfra0004/FIT3179-Asgn2</p>
+      <div class="page">
+        <div class="description description-center">
+          <center>
+            <p>Author: Dillon Frawley</p>
+            <p>
+              Source:
+              https://en.wikipedia.org/wiki/List_of_countries_by_life_expectancy
+              (table 4)
+            </p>
+            <p>
+              Dataset:
+              https://drive.google.com/file/d/1cFxsHNjolHO15AtvC74YpE9eEADOQdc/view?usp=sharing
+            </p>
+            <p>GitHub:https://github.com/dfra0004/FIT3179-Asgn2</p>
+          </center>
+          
+        </div>
       </div>
 
       <!-- add choropleth map for gender differences -->

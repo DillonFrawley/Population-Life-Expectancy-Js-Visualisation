@@ -2,14 +2,12 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
     "text": "Average Life Expectancy For The Top & Bottom N Ranked Countries",
-    "frame": "group",
-    "align": "center",
-    "fontSize": 22,
+    "align": "left",
+    "limit":100,
     "subtitle": "Figure 2 (top) & Figure 3 (btm)",
-    "subtitlePadding": 20,
-    "subtitleFontSize":14,
     "subtitleColor": "grey",
-    "anchor": "middle"
+    "anchor": "start",
+    "subtitlePadding":20
   },
   "data": {
     "url": "./data/List_of_countries_by_life_expectancy.csv"
@@ -17,13 +15,13 @@
   "params": [
     {
       "name": "Rank",
-      "value": 11,
+      "value": 10,
       "bind": {
         "input": "range",
-        "min": 0,
+        "min": 1,
         "max": 197,
         "step": 1,
-        "name": "Display Countries Ranked Higher Than(Top Visualisation)"
+        "name": "Display Top & Bottom Rank Countries"
       }
     },
     {
@@ -48,43 +46,7 @@
           "Asia",
           "Oceania"
         ],
-        "name": "Continent Selection(Top Visualisation): "
-      }
-    },
-    {
-      "name": "Rank2",
-      "value": 186,
-      "bind": {
-        "input": "range",
-        "min": 0,
-        "max": 197,
-        "step": 1,
-        "name": "Display Countries Ranked Lower Than(Btm Visualisation) "
-      }
-    },
-    {
-      "name": "Continent_selection2",
-      "bind": {
-        "input": "select",
-        "options": [
-          null,
-          "North America",
-          "South America",
-          "Europe",
-          "Africa",
-          "Asia",
-          "Oceania"
-        ],
-        "labels": [
-          "Show All",
-          "North America",
-          "South America",
-          "Europe",
-          "Africa",
-          "Asia",
-          "Oceania"
-        ],
-        "name": "Continent Selection(Btm Visualisation): "
+        "name": "Continent Selection: "
       }
     }
   ],
@@ -94,8 +56,8 @@
         "text": "",
         "subtitle": "Figure 2"
       },
-      "width": 475,
-      "height": 250,
+      "width": 170,
+      "height": 150,
       "transform": [
         {
           "window": [
@@ -113,7 +75,7 @@
           "filter": "Continent_selection == null || datum.Continent == Continent_selection"
         },
         {
-          "filter": "datum.rank < Rank"
+          "filter": "datum.rank <= Rank"
         },
         { "calculate": "datum.rank", "as": "CountryRank" }
       ],
@@ -236,8 +198,8 @@
       "resolve": { "scale": { "color": "independent" } }
     },
     {
-      "width": 475,
-      "height": 250,
+      "width": 170,
+      "height": 150,
       "transform": [
         {
           "window": [
@@ -252,12 +214,12 @@
           "joinaggregate": [{ "op": "max", "field": "rank", "as": "total" }]
         },
         {
-          "filter": "Continent_selection2 == null || datum.Continent == Continent_selection2"
+          "filter": "Continent_selection == null || datum.Continent == Continent_selection"
         },
         {
-          "filter": "datum.rank > Rank2"
+          "filter": "datum.rank >= datum.total - Rank"
         },
-        { "calculate": "datum.rank", "as": "CountryRank2" }
+        { "calculate": "datum.rank", "as": "CountryRank" }
       ],
       "layer": [
         {
@@ -329,7 +291,7 @@
                 "dx": 3
               },
               "encoding": {
-                "text": { "field": "CountryRank2", "type": "quantitative" }
+                "text": { "field": "CountryRank", "type": "quantitative" }
               }
             }
           ]
@@ -390,6 +352,5 @@
       ],
       "resolve": { "scale": { "color": "independent" } }
     }
-  ],
-  "autosize": { "type": "pad", "resize": true }
+  ]
 }

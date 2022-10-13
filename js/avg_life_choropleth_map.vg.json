@@ -11,12 +11,12 @@
     "subtitleFontSize":14,
     "anchor": "middle"
   },
-  "width": 1100,
+  "width": 860,
   "height": 500,
   "params": [
     {
       "name": "zoom_level",
-      "value": 185,
+      "value": 150,
       "bind": {
         "input": "range",
         "min": 185,
@@ -65,6 +65,13 @@
     {
       "data": {
         "url": "./data/ne_110m.json",
+        "format": { "type": "topojson", "feature": "ne_110m_graticules_30" }
+      },
+      "mark": { "type": "geoshape", "stroke": "lightgray", "fillOpacity": 0 }
+    },
+    {
+      "data": {
+        "url": "./data/ne_110m.json",
         "format": { "type": "topojson", "feature": "ne_110m_admin_0_countries" }
       },
       "transform": [
@@ -90,13 +97,7 @@
       "mark": { "type": "geoshape", "fill": "gray", "stroke": "white" },
       "encoding": { "tooltip": { "field": "note" } }
     },
-    {
-      "data": {
-        "url": "./data/ne_110m.json",
-        "format": { "type": "topojson", "feature": "ne_110m_graticules_30" }
-      },
-      "mark": { "type": "geoshape", "stroke": "lightgray", "fillOpacity": 0 }
-    },
+
     {
       "data": {
         "url": "./data/ne_110m.json",
@@ -120,7 +121,7 @@
       ],
       "layer": [
         {
-          "mark": { "type": "geoshape", "stroke": "lightgrey" },
+          "mark": { "type": "geoshape", "stroke":"lightgray"},
           "encoding": {
             "color": {
               "field": "Average Life Expectancy",
@@ -130,7 +131,6 @@
               "legend": {
                 "titlePadding": 5,
                 "direction": "horizontal",
-                "titleFontSize": 10,
                 "orient": "bottom-right"
               }
             },
@@ -175,7 +175,7 @@
                 "dy": -8,
                 "baseline": "middle",
                 "fontStyle": "italic",
-                "fontSize":12
+                "fontSize":10
                 
               },
               "encoding": {
@@ -206,7 +206,7 @@
                 "dy": -8,
                 "baseline": "middle",
                 "fontStyle": "italic",
-                "fontSize":12
+                "fontSize":10
               },
               "encoding": {
                 "longitude": { "field": "a", "type": "quantitative" },
@@ -236,7 +236,7 @@
                 "dy": -8,
                 "baseline": "middle",
                 "fontStyle": "italic",
-                "fontSize":12
+                "fontSize":10
               },
               "encoding": {
                 "longitude": { "field": "a", "type": "quantitative" },
@@ -266,7 +266,7 @@
                 "dir":"ltr",
                 "baseline": "middle",
                 "fontStyle": "italic",
-                "fontSize":12
+                "fontSize":10
               },
               "encoding": {
                 "longitude": { "field": "a", "type": "quantitative" },

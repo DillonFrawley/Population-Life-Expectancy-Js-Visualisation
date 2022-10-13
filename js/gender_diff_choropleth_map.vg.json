@@ -2,21 +2,21 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
     "text": "Gender Difference By Country in 2019 Choropleth Map",
-    "frame": "group",
+    "frame":"group",
     "align": "center",
     "fontSize": 22,
-    "subtitle": "Figure 4",
-    "subtitlePadding": 20,
+    "subtitle":"Figure 4",
+    "subtitlePadding":20,
+    "subtitleColor":"grey",
     "subtitleFontSize":14,
-    "subtitleColor": "grey",
     "anchor": "middle"
   },
-  "width": 1100,
+  "width": 860,
   "height": 500,
   "params": [
     {
       "name": "zoom_level",
-      "value": 185,
+      "value": 150,
       "bind": {
         "input": "range",
         "min": 185,
@@ -65,6 +65,13 @@
     {
       "data": {
         "url": "./data/ne_110m.json",
+        "format": { "type": "topojson", "feature": "ne_110m_graticules_30" }
+      },
+      "mark": { "type": "geoshape", "stroke": "lightgray", "fillOpacity": 0 }
+    },
+    {
+      "data": {
+        "url": "./data/ne_110m.json",
         "format": { "type": "topojson", "feature": "ne_110m_admin_0_countries" }
       },
       "transform": [
@@ -89,13 +96,6 @@
       ],
       "mark": { "type": "geoshape", "fill": "gray", "stroke": "white" },
       "encoding": { "tooltip": { "field": "note" } }
-    },
-    {
-      "data": {
-        "url": "./data/ne_110m.json",
-        "format": { "type": "topojson", "feature": "ne_110m_graticules_30" }
-      },
-      "mark": { "type": "geoshape", "stroke": "lightgray", "fillOpacity": 0 }
     },
     {
       "data": {
@@ -181,7 +181,7 @@
                 "dy": -8,
                 "baseline": "middle",
                 "fontStyle": "italic",
-                "fontSize": 12
+                "fontSize": 10
               },
               "encoding": {
                 "longitude": { "field": "a", "type": "quantitative" },
@@ -211,7 +211,7 @@
                 "dy": -8,
                 "baseline": "middle",
                 "fontStyle": "italic",
-                "fontSize": 12
+                "fontSize": 10
               },
               "encoding": {
                 "longitude": { "field": "a", "type": "quantitative" },
@@ -241,7 +241,7 @@
                 "dy": -8,
                 "baseline": "middle",
                 "fontStyle": "italic",
-                "fontSize": 12
+                "fontSize": 10
               },
               "encoding": {
                 "longitude": { "field": "a", "type": "quantitative" },
@@ -271,7 +271,7 @@
                 "dy": -8,
                 "baseline": "middle",
                 "fontStyle": "italic",
-                "fontSize": 12
+                "fontSize": 10
               },
               "encoding": {
                 "longitude": { "field": "a", "type": "quantitative" },
