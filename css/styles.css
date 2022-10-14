@@ -1,7 +1,7 @@
 
 
 body {
-    background-color: brown;
+    background-color: #b03e38;
 }
 
 
@@ -9,7 +9,7 @@ h2{
 margin-top: 3px;
 font-weight: 950;
 background-color: white;
-color: brown;
+color: #b03e38;
 font-size: 30px;
 
 }
@@ -17,7 +17,7 @@ font-size: 30px;
 h1{
     font-weight: 950;
     background-color: white;
-    color: brown;
+    color: #b03e38;
     font-size: 40px;
     max-width: 100%;
 
