@@ -3,14 +3,16 @@
   "width": 270,
   "height": 300,
   "title": {
-    "text": "Average Life Expectancy Male Vs Female Per Country in 2019 ",
-    "limit": 100,
+    "text": "Average Life Expectancy Male Vs Female Per Country",
+    "limit": 400,
+    "fontSize": 14,
+    "fontWeight":600,
     "align": "left",
     "anchor":"start",
     "subtitle":"Figure 5",
     "subtitlePadding":20,
     "subtitleColor":"grey",
-    "subtitleFontSize":14
+    "subtitleFontSize":10
   },
 
   "data": {
@@ -145,7 +147,7 @@
         "color": { "value": "black" },
         "opacity": {
           "condition": {
-            "test": "datum['Country'] == 'Eswatini' || datum['Country'] == 'Japan' || datum['Country'] == 'Australia' || datum['Country'] == 'Palau' || datum['Country'] == 'Russia' || datum['Country'] =='Yemen' || datum['Country'] == 'United States'",
+            "test": "datum['Country'] == 'Monaco' ||datum['Country'] == 'South Africa' || datum['Country'] == 'Lithuania' || datum['Country'] == 'Venezuela' || datum['Country'] == 'Portugal' || datum['Country'] == 'Russia' || datum['Country'] =='Latvia' || datum['Country'] == 'Russia'",
             "value": 1
           },
           "value": 0
@@ -183,8 +185,8 @@
               "mark": { 
                 "type": "text",
                 "align": "left",
-                "dx": -500,
-                "dy": 360,
+                "dx": -220,
+                "dy": 250,
                 "clip": true,
                 "baseline": "middle",
                 "fontStyle": "italic",
@@ -194,12 +196,6 @@
               "encoding": {
                 "text":{"field":"text_annotation"},
                 "color": { "value": "black" }
-              }
-            },
-            {
-              "mark": { "type": "line", "strokeDash": [8, 8], "clip": true },
-              "encoding": {
-                "color": { "datum": "Male = Female" }
               },
               "params": [
                 {
@@ -208,7 +204,14 @@
                   "bind": "scales"
                 }
               ]
+            },
+            {
+              "mark": { "type": "line", "strokeDash": [8, 8], "clip": true },
+              "encoding": {
+                "color": {"value":"black"}
+              
             }
+          }
             
           ]
         }

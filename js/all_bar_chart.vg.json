@@ -1,13 +1,16 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
-    "text": "Average Life Expectancy For The Top & Bottom N Ranked Countries",
+    "text": "Average Life Expectancy Top & Bottom N Ranked Countries",
+    "fontSize": 14,
+    "fontWeight":600,
     "align": "left",
-    "limit":100,
+    "limit":400,
     "subtitle": "Figure 2 (top) & Figure 3 (btm)",
     "subtitleColor": "grey",
     "anchor": "start",
-    "subtitlePadding":20
+    "subtitlePadding":20,
+    "subtitleFontSize":10
   },
   "data": {
     "url": "./data/List_of_countries_by_life_expectancy.csv"
@@ -344,7 +347,7 @@
                 "fontSize": 10
               },
               "encoding": {
-                "text": { "value": "<--- World Mean" }
+                "text": { "value": "<---World Mean" }
               }
             }
           ]
@@ -352,5 +355,6 @@
       ],
       "resolve": { "scale": { "color": "independent" } }
     }
-  ]
+  ],
+  "autosize": { "type": "pad", "resize": true }
 }

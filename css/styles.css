@@ -1,20 +1,26 @@
-body *{
-    font-family: 'Open Sans', sans-serif;
-}
+
+
 body {
-    background-color: lightblue;
+    background-color: brown;
 }
+
 
 h2{
 margin-top: 3px;
-font-size: 22;
-text-align: justify;
+font-weight: 950;
+background-color: white;
+color: brown;
+font-size: 30px;
+
 }
 
 h1{
     font-weight: 950;
     background-color: white;
-    text-align: justify;
+    color: brown;
+    font-size: 40px;
+    max-width: 100%;
+
 }
 
 .vis-container {
@@ -22,9 +28,17 @@ h1{
 }
 
 #map {
-    margin-left: -8px;
+    margin-left: -15px;
 }
 
+#introduction {
+
+    text-align: justify; 
+    font-size: 28px;
+    max-width: 100%;
+
+
+}
 
 
 
@@ -43,16 +57,24 @@ h1{
     margin-top: 2px;
     margin-right: 9px;
     max-width: 70ch;
-    text-align: justify;
+    text-align: left;
 
 }
 
 #paragraph {
     margin-top: 2px;
     margin-right: 9px;
-    margin-left: 20px;
+    margin-left: 24px;
     max-width: 70ch;
-    text-align: justify;
+    text-align: left;
+
+}
+
+#references {
+    margin-top: 2px;
+    margin-right: 9px;
+    margin-left: 24px;
+    max-width: 70ch;
 
 }
 
@@ -70,6 +92,9 @@ h1{
 .pure-u-1-2 {
     max-width: 1100px;
 }
+
+
+
 
 
 

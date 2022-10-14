@@ -4,14 +4,14 @@
     "text": "Gender Difference By Country in 2019 Choropleth Map",
     "frame":"group",
     "align": "center",
-    "fontSize": 22,
+    "fontSize": 18,
     "subtitle":"Figure 4",
     "subtitlePadding":20,
     "subtitleColor":"grey",
     "subtitleFontSize":14,
     "anchor": "middle"
   },
-  "width": 860,
+  "width": 840,
   "height": 500,
   "params": [
     {
@@ -19,7 +19,7 @@
       "value": 150,
       "bind": {
         "input": "range",
-        "min": 185,
+        "min": 150,
         "max": 500,
         "step": 5,
         "name": "Zoom: "
@@ -132,10 +132,11 @@
               },
 
               "legend": {
+                "legendX":600,
+                "legendY":455,
                 "titlePadding": 5,
                 "direction": "horizontal",
-                "titleFontSize": 10,
-                "orient": "bottom-right"
+                "orient": "none"
               }
             },
             "tooltip": [
@@ -172,7 +173,7 @@
                 }
               ],
               "data": {
-                "values": [{ "a": -28, "b": -3 }]
+                "values": [{ "a": -26, "b": -5 }]
               },
               "mark": {
                 "type": "text",
@@ -202,7 +203,7 @@
                 }
               ],
               "data": {
-                "values": [{ "a": 127, "b": 26 }]
+                "values": [{ "a": 128, "b": 25 }]
               },
               "mark": {
                 "type": "text",

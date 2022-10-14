@@ -4,14 +4,15 @@
     "text": "Average Life Expectancy By Country in 2019 Choropleth Map",
     "frame":"group",
     "align": "center",
-    "fontSize": 22,
+    "fontSize": 18,
+    "fontWeight":600,
     "subtitle":"Figure 1",
     "subtitlePadding":20,
     "subtitleColor":"grey",
     "subtitleFontSize":14,
     "anchor": "middle"
   },
-  "width": 860,
+  "width": 840,
   "height": 500,
   "params": [
     {
@@ -19,7 +20,7 @@
       "value": 150,
       "bind": {
         "input": "range",
-        "min": 185,
+        "min": 150,
         "max": 500,
         "step": 5,
         "name": "Zoom: "
@@ -129,9 +130,11 @@
               "scale": { "type": "quantize", "nice": 7, "scheme": "goldgreen" },
 
               "legend": {
+                "legendX":600,
+                "legendY":455,
                 "titlePadding": 5,
                 "direction": "horizontal",
-                "orient": "bottom-right"
+                "orient": "none"
               }
             },
             "tooltip": [
@@ -139,6 +142,7 @@
                 "field": "properties.NAME_CIAWF",
                 "type": "nominal",
                 "title": "Country"
+                
               },
               {
                 "field": "properties.CONTINENT",
